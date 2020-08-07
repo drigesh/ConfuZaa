@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".UserPage">
+
+    <TextView
+        android:id="@+id/teamText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingTop="1dp"
+        android:text="@string/team"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dateSelect"
+        app:layout_constraintTop_toBottomOf="@+id/programText" />
+
+    <EditText
+        android:id="@+id/teamSelect"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="251dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/select"
+        android:inputType="textShortMessage|text"
+        android:paddingStart="45dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Programme" />
+
+    <TextView
+        android:id="@+id/programText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingTop="1dp"
+        android:text="@string/programme"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dateSelect"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+    <EditText
+        android:id="@+id/dateSelect"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/date"
+        android:inputType="date"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DateText"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="1dp"
+        android:text="@string/dateText"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dateSelect"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/timeSelect"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="251dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/select"
+        android:inputType="time"
+        android:paddingStart="45dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateSelect" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:paddingTop="1dp"
+        android:text="@string/timeText"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dateSelect"
+        app:layout_constraintTop_toBottomOf="@+id/DateText" />
+
+    <EditText
+        android:id="@+id/Programme"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="251dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/select"
+        android:inputType="textShortMessage|text"
+        android:paddingStart="45dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="548dp"
+        android:background="#C5CAE9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
